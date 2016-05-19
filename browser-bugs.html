@@ -5,10 +5,55 @@ slug: css
 lead: "An example of a bootstrap css page with liquid data inclusion."
 fullwidth: true
 ---
-
+<style>
+.similar ul li {list-style: none;}
+.similar ul li span {display:block;height:1em;width:100%;}
+.similar ul li span + h5 {letter-spacing: 2px;text-align: center;}
+</style>
 
 <div class="bs-docs-section">
 
+As a service to the community, ARIN is furnishing a software repository for tools that are related to ARIN's mission. These tools are furnished "as is" and maintained by members in the community.
+
+If you would like ARIN to host your tools for the community to use, please e-mail projects@arin.net with a short description of the project and how it is relevant to ARIN's mission. We will respond to your request within 5 business days. If approved, we will host your project and will provide the following services:
+
+* Source code repository
+* Web-based project management
+* Mailing list
+<div class="similar">
+	<ul>
+		<li><span class="dfe3e3" style="background-color: #dfe3e3"></span>
+		<h5>
+			#dfe3e3
+		</h5>
+		</li>
+		<li><span class="abab9c" style="background-color: #abab9c"></span>
+		<h5>
+			#abab9c
+		</h5>
+		</li>
+		<li><span class="5e5b4e" style="background-color: #5e5b4e"></span>
+		<h5>
+			#5e5b4e
+		</h5>
+		</li>
+		<li><span class="401d21" style="background-color: #401d21"></span>
+		<h5>
+			#401d21
+		</h5>
+		</li>
+		<li><span class="99262a" style="background-color: #99262a"></span>
+		<h5>
+			#99262a
+		</h5>
+		</li>
+		<li><span class="ff4f4f" style="background-color: #ff4f4f"></span>
+		<h5>
+			#ff4f4f
+		</h5>
+		</li>
+	</ul>
+</div>
 
 <div class="dropdown">
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -41,12 +86,12 @@ fullwidth: true
         </tr>
       </thead>
       <tbody>
-        {% for bug in site.data.browser-bugs %}
+        {% for bbug in site.data.browser-bugs %}
         <tr>
-          <td>{{ bug.browser }}</td>
-          <td>{{ bug.summary | markdownify | bugify }}</td>
-          <td>{{ bug.upstream_bug | bugify }}</td>
-          <td>{{ bug.origin | bugify }}</td>
+          <td>{{ bbug.browser }}</td>
+          <td>{{ bbug.summary | markdownify | bugify }}</td>
+          <td>{{ bbug.upstream_bug | bugify }}</td>
+          <td>{{ bbug.origin | bugify }}</td>
         </tr>
         {% endfor %}
       </tbody>
