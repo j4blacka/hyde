@@ -1,0 +1,3 @@
+source "https://www.wlast.org"
+
+gem "jekyll"

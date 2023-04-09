@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<?php
+$title="2022 Western Loudoun Artists (virtual) Studio Tour Artists";
+$description="Resources for WLAST artists";
+?>
+<?php
+include($_SERVER['DOCUMENT_ROOT'].'/includes/head.html');
+?>
+
+<!-- page specific styles -->
+<style type="text/css">
+
+	ul#resources li {list-style-type:disc;margin-bottom:1.0em;}
+	ul#resources li ul {margin-top:0.66em;}
+	ul#resources li ul, ul#resources li ul li {list-style-type:disc;font-weight:normal;}
+	.highlight {background-color: #fff86c;}
+
+ul#calendar li {margin-bottom:0.75em;list-style-type:none;}
+ul#calendar li.done::after, li.completed::after {content: " DONE ";font-size:smaller;font-weight:bold;color:#999;}
+ul#calendar li.done::before {content: "\2713 \0020\0020";font-weight:bold;margin-left:-1em;}
+</style>
+<!--[if lt IE 10]>
+<style>
+#wrapper h2 {font-style:italic;}
+</style>
+<![endif]-->
+</head>
+<body class="page">
+
+<div id="wrapper">
+<header class="header">
+<?php
+include($_SERVER['DOCUMENT_ROOT'].'/includes/header.html');
+?>
+</header>
+	<section class="full">
+		<div class="site-main">
+			<article class="main-content main page type-page status-publish hentry">
+	<header class="entry-header"><h1 class="entry-title">Artists' Backroom</h1></header><!-- .entry-header -->
+	<div class="entry-content">
+		<h2>Get Ready for the 2022 Tour</h2>
+
+<!--
+In addition, along with the CARES Act and information supplied by the Americans for the Arts organization, this link provides a significant amount of useful resources for individual artists. Again, well worth the time to take a look!!
+https://www.americansforthearts.org/by-topic/disaster-preparedness/coronavirus-covid-19-resource-and-response-center#impact
+<hr>
+If you need help with finding the appropriate links/handles/etc. check out these examples from Hunt Country Jewelers.
+
+— G'Ann Zieger
+
+
+Etsy Shop: etsy.com/shop/YOURNAME
+image.png
+
+YOUTUBE:youtube.com/user/YOURNAME
+ image.png
+
+FACEBOOK: @YOURFACEBOOKNAME or Facebook.com/YOURFACEBOOKNAME
+image.png
+
+INSTAGRAM: Instagram.com/YOURINSTAGRAMNAME
+image.png
+<hr>
+WLAST Artist Info: DC Metro Virtual Town Hall Video Recording - Strategies for Survival in the Arts
+
+Thanks to Elizabeth Bracey again for distributing this information for everyone. The broadcast is fairly long (about 90 minutes?) but there is some good information to help artists during this unprecedented time. [May of 2020]
+To  view the video archive & complete chat transcript, please follow this link
+
+To register and follow us for upcoming Third Space Network events, please visit our Crowdcast channel.
+<hr>
+ -->
+<h3>Read the Handbook</h3>
+<p>There is a wealth of good information in the 2022 Artist Handbook, including what to do with the Passport QR code sign for your tour stop, which plays a  crucial role in helping us secure grant funding and other support for future Tours. Download:</p>
+<ul>
+	<li>  <a href="/artists/WLASTArtistHandbook2022.pdf"">WLASTArtistHandbook2022.pdf</a> or </li>
+	<li>  <a href="/artists/WLASTArtistHandbook2022.docx">WLASTArtistHandbook2022.docx</a></li>
+</ul>
+
+ <h2>Helpful Information on Promoting Yourself and Your Art Online</h2>
+In 2020, we created some resouces to help you promote yourself and your art online. In case you missed them, here there are:
+<ul id="resources">
+	<li>Carolyn Cutshall conducted two webinars for a high-level view of online selling platforms and how to market them.
+
+	<ul>
+		<li>"Artist Workshop: Online Selling Platforms" on YouTube here: <a href="https://youtu.be/NBMQJIwUTzo" target="_blank">https://youtu.be/NBMQJIwUTzo</a>
+		<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/NBMQJIwUTzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+		</li>
+		<li>"Marketing Your On-line Selling Platform" on YouTube here: <a href="https://youtu.be/TBU44iexB1E" target="_blank">https://youtu.be/TBU44iexB1E</a></li>
+	</ul>
+
+	</li>
+	<li>Amy Manson and Teresa Jardines conducted an online selling event and shared their lessons learned and G'Ann Zieger created a cheat sheet for a live sale. Get their PDF <a href="/artists/WLASTPromotionFaceBookLiveSalesEvents.pdf">WLASTPromotionFaceBookLiveSalesEvents.pdf</a></li>
+	<li>G'Ann Zieger created a user guide to start selling on Etsy. Get her PDF <a href="/artists/OpenAnEtsyShopInAnHourOrLess.pdf">OpenAnEtsyShopInAnHourOrLess.pdf</a> (Note: the Table of Contents is clickable to navigate the guide.)</li>
+</ul>
+
+			</div><!-- .entry-content -->
+
+			</article>
+		</div>
+	</section>
+
+<footer>
+	<section class="full upper hentry">
+<?php
+//include($_SERVER['DOCUMENT_ROOT'].'/includes/sponsors-logos.html');
+?>
+<?php
+//include($_SERVER['DOCUMENT_ROOT'].'/includes/support-the-tour.html');
+?>
+{% include get-merchandise.html %}
+	</section>
+	<section class="full lower">
+
+			<nav class="main-menu foot">
+<?php
+include($_SERVER['DOCUMENT_ROOT'].'/includes/nav-footer.html');
+?>
+			</nav>
+<?php
+include($_SERVER['DOCUMENT_ROOT'].'/includes/copyright.html');
+?>
+<div class="clear"></div>
+
+	</section>
+</footer>
+<aside class=""><!-- [tracking and other global scripts] -->
+<?php
+include($_SERVER['DOCUMENT_ROOT'].'/includes/tracking.html');
+include($_SERVER['DOCUMENT_ROOT'].'/includes/other-global-scripts.html');
+?>
+</aside>
+</div>
+</body>
+</html>

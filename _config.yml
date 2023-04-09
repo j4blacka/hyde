@@ -1,21 +1,31 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+url: "https://www.wlast.org" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Permalinks
-permalink:        pretty
+baseurl: "" # the subpath of your site, e.g. /blog
 
-# Server
-destination:      _gh_pages
-host:             127.0.0.1
-port:             3000
-baseurl:
-encoding:         UTF-8
+title: "Western Loudoun Art & Studio Tour" # the name of your site, e.g. ACME Corp.
 
-# Custom vars
-current_version:  3.3.5
+description: "The 16th annual Western Loudoun Art and Studio Tour is on for the weekend of June 2-4, 2023. During this event over 50 western Loudoun VA artists and guest artists open their studios to the public for exhibition and sale of their work."
 
-cdn:
-  css:            https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css
-  css_theme:      https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css
-  js:             https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js
+sass:
+    load_paths:
+        - _sass
+
+collections:
+
+  artist:
+    output: true
+
+
+defaults:
+
+  - scope:
+      path: ""
+      type: "artist"
+    values:
+      layout: "artist"
+
+
+  - scope:
+      path: ""
+    values:
+      layout: "default"
