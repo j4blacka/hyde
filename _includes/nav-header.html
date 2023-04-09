@@ -1,0 +1,23 @@
+<nav class="row bg-primary text-white px-3 primary-navigation site-navigation">
+	<ul id="menu" class="main">
+		<li class="menu-item"><a href="/" {% if page.url == "/" %} class="on-state"{% endif %}>Home</a></li>
+		<li class="menu-item"><a href="/artists.html" {% if page.url == "/artists.html" %} class="on-state"{% endif %}>Artists</a>
+		<ul class="sub-menu group">
+			<li class="menu-item"><a href="/artists.html">2023 Artists</a></li>
+			<li class="menu-item"><a href="/studios.html">Studio Photo Album</a></li>
+			<li class="menu-item"><a href="/for-artists/artist-faqs.html" title="Questions and answers for applying artists">Artist FAQs</a></li>
+		</ul>
+		</li>
+		<li class="menu-item"><a href="/map.html">Maps</a></li>
+		<li class="menu-item"><a href="/sponsors.html">Sponsors</a> </li>
+		<li class="menu-item"><a href="/news.html">News &amp; Media</a></li>
+		<li class="menu-item"><a href="/support-us.html">Support Us</a>
+		<ul class="sub-menu">
+			<li class="menu-item"><a href="/support-us.html">Sponsor/Contribute</a></li>
+			<li class="menu-item"><a href="/banner.html">Help us spread the word</a></li>
+			<li class="menu-item"><a href="/volunteer.html">Volunteer</a></li>
+			<!-- <li class="menu-item"><a href="/palm-patrons.htm">Palm Patrons</a></li> -->
+		</ul>
+		</li>
+	</ul>
+</nav>

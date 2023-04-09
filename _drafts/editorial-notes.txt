@@ -1,0 +1,253 @@
+Editorial nit pickings
+
+youtube link out and embed URL are not identical -- compare watch on Youtube.com with share/embed code
+https://www.youtube.com/watch?v=q_ii6GMj7EE
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q_ii6GMj7EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+Branding
+
+<ul>
+	<li>WLAST = Western Loudoun Art and Studio Tour</li>
+	<li>WLAST = Western Loudoun Art & Studio Tour - used in the trademark and most graphics</li>
+	<li>WLAST = Western Loudoun Art and Artists Studio Tour = WLAAST ??</li>
+	<li>WLAST = Western Loudoun Artists Studio Tour (this is the original name, used in older documents and news articles)</li>
+</ul>
+
+Bios
+
+<ol>
+	<li>Allison Wiese - bio is cut off mid-sentence</li>
+
+	<li>David Norton- bio is cut off mid-sentence FIXED</li>
+	<li>Richard Busch - bio is just 4 words ? "high-fired, functional ceramics" Was 6 words last year ... shall we mine his more informative 2019 bio on https://www.wlast.org/artist/RichardBusch.html for a little more content DONE</li>
+	<li>Lori Goll - bio includes "Please visit my website for more info." FIXED</li>
+	<li>Marcia Klioze - bio is a bit garbled, not sure how to edit for clarity FIXED</li>
+	<li>Erin Landaver - bio names other artists in 2023 Tour -- manually add links? DONE
+	 Do a 'connections' page, with familty and teacher student relatationships?</li>
+	<li>Jeffrey Miller bio includes "Offering on tour: Color and black & white fine art photography.  Including: landscapes, seascapes, cityscapes and still life.  Photography demonstrations and answers for all your photography questions."</li>
+</ol>
+
+Names
+
+There must be something about CafE that causes the names to be a wee bit off. Even Liz's stuff is "Elizabeth Hall" in the CafE spreadsheets. Does CafE use the name the artist gives for the CafE user account, maybe?
+
+<ol>
+	<li>Anne Block was Anne Marshall Block in prior tours</li>
+
+	<li>Amy Walton was Amy RamsEy Walton in prior tour(s), also she signs her pastels as Amy Ramsey Walton. Not to add to confusion with Nancy RamsEy ...</li>
+
+	<li>Mark Thomas was Mark Paul Thomas in his firt tour (2017). I think he's more memorable with his middle name included.</li>
+
+	<li>Cutshalls -- Carolyn used her name in the application, bio says "Spouses Edwin and Claire Cutshall, and their son, Logan Cutshall, work together ..." We've called their stop "Ed and Claire Cutshall" in past tours.</li>
+</ol>
+Amie Ware was Amie C. Ware in a previous tour -- FIXED
+
+studio name and guest location are not playing nice with the conditions I've coded
+Okcha TeSelle needs to show RHAC as guest loc, also Jack Nevitt Meredith Hilt
+J Miller could show Guest Artist Location: as the clay ward studio
+
+
+
+
+<!-- if guestArtist contains guest AND studioName is null, StudioName = Artist Hosted At studio name of street address ??
+Round Hill Arts Center - Guest
+35246 Harry Byrd
+
+Franklin Park Performing & Visual Arts Center - Guest
+36441 Blueridge View Lane
+
+The Clay and Metal Loft - Guest
+27 Fairfax Street
+
+Monkeytown Pottery - Guest
+20603 Airmont Road
+
+Chunk of Happiness X garden corner guest
+Garden Corner Studios
+38615 Morrisonville Road, Lovettsville, VA 20180
+-->
+
+by stop?
+list and link thumbnail to artist page?
+
+by cluster?
+list and link thumbnail to artist page?
+
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/DeMark_000090_989485_776045_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Friedenberg_000178_898181_677893_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Friedenberg_000183_898186_677928_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Gil_000188_976769_510889_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Gil_000191_976772_763627_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Gil_000193_976774_763632_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Gil_000194_976775_763638_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Gil_000195_976776_763639_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Gil_000196_976777_763640_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Gil_000197_976778_763641_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Gil_000198_976779_763642_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Gil_000199_976780_763643_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Gil_000201_976782_763647_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Goll_000203_970842_757099_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Goll_000204_970843_757104_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Goll_000205_970844_757112_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Goll_000206_970845_757114_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Goll_000207_970846_757124_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Goll_000209_970848_757165_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Goll_000210_970849_757169_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Goll_000211_970850_757172_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Goll_000212_970851_757175_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Goll_000213_970852_757179_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Goll_000215_970854_757194_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Goll_000216_970855_757199_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Grove_000217_957572_020918_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Grove_000218_958604_741563_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Grove_000219_958605_741576_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Grove_000220_958606_741583_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Grove_000221_958607_741587_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Grove_000222_958608_741599_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Grove_000223_958609_741708_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Grove_000224_958610_741720_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Grove_000225_958611_742228_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Grove_000226_958612_742308_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Grove_000227_958613_742340_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Grove_000228_958614_742362_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000230_970456_524836_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000231_970457_524849_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000232_970458_527209_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000233_970459_527220_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000234_970460_527236_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000235_970461_527259_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000236_970462_737885_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000237_970463_756742_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000238_970464_756748_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000239_970465_756752_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000241_970467_756761_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000244_972753_302440_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000245_972754_148475_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000246_972755_329507_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hall_000251_972760_501944_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hanes_000255_899255_891288_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hanes_000256_899264_021203_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hanes_000257_899265_679588_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hanes_000258_899266_679592_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hanes_000260_899268_679595_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hanes_000261_899269_679598_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hanes_000264_899272_679610_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hanes_000265_899273_679615_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hanes_000266_899274_679617_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hanes_000268_899276_679619_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hilt_000272_980501_527721_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hilt_000273_980502_527727_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Hilt_000277_980506_766857_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Kirk_000298_914526_696380_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Kirk_000307_914535_696410_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Kirk_000308_914536_696413_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Kirk_000309_914537_696416_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Klioze_000313_975764_733379_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Klioze_000314_975765_733381_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Largent_000339_990230_529021_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Mann_000353_896848_398917_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Mann_000365_992709_779712_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Mann_000367_992711_779771_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Mann_000369_992713_779786_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Mann_000370_992714_779727_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Mann_000371_992715_587863_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Mattraw_000387_968030_450694_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Mattraw_000388_968037_452996_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Mattraw_000389_968038_452997_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Maurer_000397_947647_727684_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Maurer_000401_947671_727695_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Maurer_000402_947672_727696_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Maurer_000403_947673_727697_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Maurer_000408_947678_727709_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Miller_000411_929025_415655_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Miller_000424_929046_713032_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Mock_000433_970927_757282_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Nelson_000449_955407_738959_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Nelson_000451_955409_738965_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Nelson_000452_955410_738970_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Nelson_000453_955411_738972_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Norton_000471_940205_724138_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Oliver_000495_990845_507866_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Oliver_000496_990846_516393_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Parent_000508_914136_012946_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Parent_000511_971655_757820_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Parent_000516_971660_757922_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Parent_000520_971664_757994_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ramsey_000521_988998_100456_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ramsey_000523_989006_100481_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ramsey_000525_989008_112531_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ramsey_000526_989009_112537_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ramsey_000527_989010_112548_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ramsey_000529_989012_112603_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ratcliffe_000533_903743_454700_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ratcliffe_000534_903744_454714_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ratcliffe_000535_903745_454722_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ratcliffe_000537_903747_454738_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ratcliffe_000540_903750_454755_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ratcliffe_000541_903751_454801_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ratcliffe_000545_903755_987552_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Ratcliffe_000546_903756_987597_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Riedel_000551_982148_768484_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Riedel_000552_982149_768485_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Riedel_000554_982151_768549_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Riedel_000555_982152_768558_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Riedel_000556_982153_768589_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Riedel_000558_982155_768640_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Stephenson_000568_894652_675193_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Stevens_000572_988403_769996_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Stevens_000573_988404_770004_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Stevens_000575_988406_770048_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Stevens_000578_988409_772182_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Stevens_000579_988410_772204_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Stevens_000580_988411_772228_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Taylor-Holz_000597_992106_778766_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Taylor-Holz_000599_992108_778774_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Taylor-Holz_000600_992109_778777_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Taylor-Holz_000601_992110_778780_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Taylor-Holz_000608_992117_778824_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/TeSelle_000614_988581_775235_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/TeSelle_000615_988582_775244_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thomas_000621_959673_502421_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thomas_000623_975545_502434_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000631_992009_777729_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000632_992021_777780_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000633_992022_777844_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000634_992023_777855_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000635_992024_777867_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000636_992025_778193_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000639_992028_778216_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000640_992029_778234_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000642_992031_778276_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000645_992034_778303_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000648_963537_749164_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000649_963538_749165_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000650_963539_749169_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000651_963540_749173_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000652_963541_749181_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000653_963542_749184_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000654_963543_749187_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000655_963544_749190_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Thompson_000656_963545_749197_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Walton_000658_959331_743804_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Weidner_000697_977509_762349_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Weidner_000698_977510_759321_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Weidner_000706_977518_759328_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Widom_000708_989812_776199_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Widom_000709_989814_776208_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Widom_000711_989816_776283_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Widom_000719_989824_776442_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000723_903020_678557_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000724_903022_678571_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000725_903023_678581_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000726_903024_684546_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000727_903025_684547_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000728_903026_684548_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000729_903027_684551_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000730_903028_684562_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000731_903029_684569_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000732_903030_684571_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000733_903031_684574_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000734_903032_684578_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000735_903033_684586_11026.jpg - Remote file did not exist
+/Volumes/Macintosh HD/Users/jblacka/Sites/jekyll_bootstrap_project/assets/photos/Wiese_000737_903035_684627_11026.jpg - Remote file did not exist

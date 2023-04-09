@@ -1,63 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    {% include header.html %}
-  </head>
-  <body>
-    <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
-
-    <!-- Docs master nav -->
-    {% include nav/main.html %}
-
-    <!-- Docs page layout -->
-    <div class="bs-docs-header" id="content" tabindex="-1">
-      <div class="container">
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.lead }}</p>
-      </div>
-    </div>
-
-    <div class="container bs-docs-container">
-
-      <div class="row">
-        <div class="col-md-{% if page.fullwidth == true %}12{% else %}9{% endif %}" role="main">
-          {{ content }}
-        </div>
-        {% unless page.fullwidth == true %}
-        <div class="col-md-3" role="complementary">
-          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
-            <ul class="nav bs-docs-sidenav">
-              {% if page.slug == "getting-started" %}
-                {% include nav/getting-started.html %}
-              {% elsif page.slug == "css" %}
-                {% include nav/css.html %}
-              {% elsif page.slug == "components" %}
-                {% include nav/components.html %}
-              {% elsif page.slug == "js" %}
-                {% include nav/javascript.html %}
-              {% elsif page.slug == "customize" %}
-                {% include nav/customize.html %}
-              {% elsif page.slug == "about" %}
-                {% include nav/about.html %}
-              {% elsif page.slug == "migration" %}
-                {% include nav/migration.html %}
-              {% endif %}
-            </ul>
-            <a class="back-to-top" href="#top">
-              Back to top
-            </a>
-            {% if page.slug == "css" or page.slug == "components" or page.slug == "js" %}
-            <a href="#" class="bs-docs-theme-toggle" role="button">
-              Preview theme
-            </a>
-            {% endif %}
-          </nav>
-        </div>
-        {% endunless %}
-      </div>
-    </div>
-
-    {% include footer.html %}
-  </body>
+<html lang="{{ site.lang | default: " en-us" }}">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>{{ page.title }} - {{ site.title }}</title>
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="page">
+<div class="container-fluid">
+	<div id="wrapper" class="wrapper">
+		<div class="container bg-white" role="main">
+			<header class="row header">
+				{% include header.html %}
+			</header>
+			<article class="main-content main page type-page status-publish hentry">
+				<header class="entry-header mt-4"><h1 class="entry-title">{{page.title}}</h1></header>
+	<div class="entry-content">
+				{{ content }}
+				</div>
+			</article>
+		</div>
+		<footer class="row">
+			<section class="full upper hentry">
+<!-- include get-merchandise.html -->
+			</section>
+			<section class="full lower">
+				<nav class="main-menu foot">
+{% include nav-footer.html %}
+				</nav>
+				<div class="my-3">{% include copyright.html %}</div>
+			</section>
+		</footer>
+		<aside class="">
+		<!-- [tracking and other global scripts] -->
+		{% if jekyll.environment == "production" %}
+			{% include tracking.html %}
+		{% endif %}
+		<!--  include other-global-scripts.html  -->
+		</aside>
+	</div>
+</div>
+</body>
 </html>

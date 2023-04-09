@@ -1,0 +1,12 @@
+<nav class="fatfootermenu">
+<!-- <div style="display: none; text-align:center; color:#fff;padding:0.3em 0;"><a href="/artists/call-for-entries.htm">Call for Entries!</a> Applications for the 2019 tour are due February 1. <a href="/onlineentry.htm">Apply Now!</a></div> -->
+
+	<h4><strong><a href="/artists.htm">2023 Artists</a></strong></h4>
+	<ul class="sub-menu">
+{% for artist in site.data.basics %}
+	{% assign linkFName = artist.FirstName | replace:'.','' | replace:' ','-' %}
+	{% assign linkLName =  artist.LastName | replace:'.','' | replace:' ','-' %}
+		<li><a href="/artist/{{ linkFName }}-{{ linkLName }}_2023.html">{{ artist.FirstName}} {{artist.LastName }}</a></li>
+{% endfor %}
+	</ul>
+</nav>

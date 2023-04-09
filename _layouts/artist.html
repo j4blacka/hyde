@@ -1,0 +1,240 @@
+{% for artist in site.artist %}
+	{% if artist.FirstName == page.FirstName and artist.LastName == page.LastName %}
+{% comment %} ### Simplify variables ### {% endcomment %}
+		{% assign FirstName = artist.FirstName %}
+		{% assign LastName =  artist.LastName %}
+
+		{% for item in site.data.allinfo %}
+			{% if item.FirstName == page.FirstName and item.LastName == page.LastName %}
+				{% assign StopNo = item.StopNo %}
+				{% assign Cluster = item.Cluster %}
+				{% assign GuestArtist = item.GuestArtist %}
+
+					{% assign StudioName    = item.StudioName %}
+					{% assign GuestOf       = item.GuestOf %}
+					{% assign StudioNameDir = item.StudioName %}
+
+					{% if GuestArtist contains "Guest" %}
+						{% assign GuestOf = item.GuestOf %}
+						{% assign StudioNameDir = "this Tour Stop" %}
+					{% endif %}
+					{% if GuestArtist contains "Studio" and StudioName == null %}
+						{% assign  StudioNameDir = "this Artist Studio" %}
+					{% endif %}
+					{% if StudioName  == null %}
+						{% capture StudioName %}{{ FirstName }} {{ LastName }} Studio {% endcapture %}
+					{% endif %}
+
+				{% assign Website = item.Website %}
+				{% assign Media1 = item.Media1 %}
+				{% assign Media2 = item.Media2 %}
+				{% assign DaysOpen = item.DaysOpen %}
+				{% assign Offering = item.Offering %}
+				{% assign DaysOpen = item.DaysOpen %}
+				{% assign InstagramURL = item.InstagramURL %}
+				{% assign FacebookURL = item.FacebookURL %}
+				{% assign InterviewURL = item.InterviewURL %}
+				{% assign WrittenDirections = item.WrittenDirections %}
+				{% assign GoogleMapURL = item.GoogleMapURL %}
+				{% assign NewArtist = item.NewArtist %}
+				{% assign WheelchairAccessible = item.WheelchairAccessible %}
+				{% assign WLASTID = item.WLASTID %}
+				{% assign Email = item.Email %}
+				{% assign NewArtist = item.NewArtist %}
+				{% assign AreaCode = item.AreaCode %}
+				{% assign Phone = item.Phone %}
+				{% assign StreetAddress = item.StreetAddress %}
+				{% assign City = item.City %}
+				{% assign State = item.State %}
+				{% assign Zip = item.Zip %}
+
+				{% capture mapQueryString %}{{ StreetAddress | replace: ' ','+' }}+{{ City }}+{{State}}+{{Zip}}{% endcapture %}
+				{% capture mapQueryStringEnc %}{{ StreetAddress | replace: ' ','%20' }}%2C%20{{ City }}%2C%20{{State}}%20{{Zip}}{% endcapture %}
+			{% endif %}
+		{% endfor %}
+	{% endif %}
+{% endfor %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-us" }}">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+	<title>{{ FirstName }} {{ LastName }} - {{ site.title }}</title>
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="page">
+<div class="container-fluid">
+	<div id="wrapper" class="wrapper">
+		<div class="container bg-white" role="main">
+
+			<header class="row header">
+				{% include header.html %}
+			</header>
+			<article class="main-content main page type-page status-publish hentry">
+
+				<header class="entry-header pt-3">
+					<h1 class="entry-title" style="margin-bottom: 0;">
+						{{ FirstName }} {{ LastName }}
+					</h1>
+					<small class="days-open">
+					{% if DaysOpen contains 'Only' %}
+						{{ DaysOpen }}
+					{% endif %}
+					</small>
+				</header>
+				<div class="entry-content">
+					<div class="nameMediaAddressClusterStop">
+						<h2>
+							{{ Media1 }}{% if Media2 %}, {{ Media2 }} {% endif %}
+						</h2>
+
+						<p>
+							{% if StudioName  != null %}<strong>{{ StudioName }}</strong><br />{% endif %}
+							{% if GuestOf != null %}<strong>Guest Artist</strong> at {{ GuestOf }}<br />{% endif %}
+							{{ StreetAddress }},<br />
+							{{ City }}, {{ State }}  {{ Zip }}<br /><br />
+							{{ Cluster }} Cluster, 2023 <strong>Stop #{{ StopNo }}</strong>
+							<br />
+						</p>
+
+    </div>
+
+					<div class="artist-statement fullWidth">
+						<h2>
+							About
+						</h2>
+
+	{% for image in site.data.images %}
+		{% if image.thumbnail =="y" %}
+			{% if image.first_name == FirstName and image.last_name == LastName %}
+				<div class="photo photoNumber1">
+					<a href="/assets/photos/{{image.filename}}" target="{{image.first_name}}_{{image.last_name}}"><img src="/assets/photos/{{image.filename}}" alt="&copy; {{image.first_name}} {{image.last_name}} image c {{image.year}}"></a>
+					<div class="caption">
+						{{ image.medium }}: {{ image.title }} <!-- &copy; {{image.year}} -->
+						{% if image.description %}<br />{{ image.description }}{% endif %}
+					</div>
+				</div>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+
+{{ content | markdownify }}
+					</div>
+
+					<div class="photos-wrapper">
+		{% for image in site.data.images %}
+			{% if image.first_name == FirstName and image.last_name == LastName and image.thumbnail != "y"  and image.thumbnail != "X"%}
+				<div class="photo">
+					<a href="/assets/photos/{{image.filename}}" target="{{image.first_name}}_{{image.last_name}}"><img src="/assets/photos/{{image.filename}}" alt="&copy; {{image.first_name}} {{image.last_name}} image {{image.year}}"></a>
+					<div class="caption">
+						{{ image.medium }}: {{ image.title }} <!-- &copy; {{image.year}} -->
+						{% if image.description %}<br />{{ image.description }}{% endif %}
+					</div>
+				</div>
+			{% endif %}
+		{% endfor %}
+
+					</div>
+					<div class="clear">
+						<br />
+					</div>
+
+					<p>
+						<br />
+						<strong>Available from this artist:</strong><br />
+						{{ Offering }}
+					</p>
+					<div id="embeddedMapEtc">
+						<p class="days-open">
+							{{ DaysOpen }}
+						</p>
+						<p>
+							<strong>Map and Directions:</strong><br>
+						</p>
+						<div class="studio-directions">
+							<div class="sign">
+								{{ Cluster }} <span>Stop #{{ StopNo }}</span>
+							</div>
+							<p>
+								<strong>Directions to {{ StudioNameDir }}:</strong>
+							</p>
+							<p>
+								{{ WrittenDirections }}
+							</p>
+						</div>
+{% comment %}
+Consider replacing with static piece of Liz's map and linking it to Google maps?
+Consider diving in to the new API Console/Cloud thing with a credit card number?
+{% endcomment %}
+						<div class="embeddedGoogleMap">
+{% if jekyll.environment == "production" %}
+							<iframe title="map" frameborder="0" height="300" width="600" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAQQOkdA7qc4qmn6CHIVFj62TYHmCA5bII&amp;q={{ mapQueryString }}"
+							referrerpolicy="no-referrer-when-downgrade">Embedded Google Map shows the tour stop location</iframe>
+{% endif %}
+						</div>
+
+					</div>
+					{% if Website or InterviewURL or InstagramURL or FacebookURL %}
+					<div>
+						<p>Connect with this artist:</p>
+						{% if Website %}
+						<div>
+							Visit: <a href="http://{{ Website }}" target="_blank">{{ Website }}</a>
+						</div>
+						<br />
+						{% endif %}
+						{% if InterviewURL %}
+						<p>
+							Special interview with the artist <a href="http://https://www.youtube.com/watch?v={{ InterviewURL }}" target="_blank">on YouTube</a>
+						</p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ InterviewURL }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>></iframe>
+						{% endif %}
+						{% if InstagramURL or FacebookURL %}
+						<p>
+							You can also find this artist
+							{% if InstagramURL %}
+							on Instagram
+								{% if InstagramURL contains "stagram.com" %}
+								at <a href="https://{{InstagramURL }}" target="_blank">{{ InstagramURL }}</a>
+								{% else %}
+								as <strong>{{ InstagramURL }}</strong>
+								{% endif %}
+							{% endif %}
+							{% if InstagramURL or FacebookURL %} and {% endif %}
+								{% if FacebookURL %}
+								on Facebook
+								{% if FacebookURL contains "acebook" %}
+								at <a href="https://{{FacebookURL }}" target="_blank">{{ FacebookURL }}</a>
+								{% else %}
+								as <strong>{{ FacebookURL }}</strong>
+								{% endif %}
+							{% endif %}
+						</p>
+						{% endif %}
+						<div class="clear">
+						</div>
+					</div>
+					{% endif %}
+				</div>
+			</article>
+		</div>
+		<footer class="row">
+			<section class="full upper hentry">
+<!-- include get-merchandise.html -->
+			</section>
+			<section class="full lower">
+				<nav class="main-menu foot">
+{% include nav-footer.html %}
+				</nav>
+				<div class="my-3">{% include copyright.html %}</div>
+			</section>
+		</footer>
+		<aside class="">
+		{% if jekyll.environment == "production" %}
+			{% include tracking.html %}
+		{% endif %}
+		</aside>
+	</div>
+</div>
+</body>
+</html>

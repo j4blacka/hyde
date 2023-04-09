@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-us" }}">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>{{ page.title }} - {{ site.title }}</title>
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<meta name="description" content="{{ page.description }}">
+</head>
+<body class="page">
+<div class="container-fluid">
+	<div id="wrapper" class="wrapper">
+		<div class="container bg-white" role="main">
+			<header class="row header">
+				{% include header.html %}
+			</header>
+			<article class="xcontainer" style="max-width: 760px;margin:auto;">
+			<header class="entry-header mt-4"><h1 class="entry-title">{{page.title}}</h1></header>
+			<div class="entry-content">
+				{{ content }}
+<div id="artist-wrapper">
+<div class="thumbnailGallery">
+
+<ul id="list2023" class="">
+
+{% for artist in site.data.basics %}
+
+{% comment %}
+	clean name of spaces and periods for URL; replace spaces with dash
+{% endcomment %}
+
+{% assign linkFName = artist.FirstName | replace:'.','' | replace:' ','-' %}
+{% assign linkLName = artist.LastName  | replace:'.','' | replace:' ','-' %}
+{% assign StopNo = artist.StopNo %}
+
+{% comment %}
+translate cluster assignment to css cluster class
+{% endcomment %}
+
+{% if artist.Cluster == "Catoctin Region" %}
+	{% assign cluster = "catoctin" %}
+	{% elsif artist.Cluster == "Loudoun Valley" %}
+	{% assign cluster = "loudoun" %}
+	{% elsif artist.Cluster == "Waterford/Leesburg" %}
+	{% assign cluster = "waterford" %}
+	{% elsif artist.Cluster == "Snickers Gap" %}
+	{% assign cluster = "snickers" %}
+	{% else assign cluster = "" %}
+{% endif %}
+
+<li id="wlast2023-{{ artist.ID }}" class="thumbnail {{ cluster }}{% if artist.New %} new-artist {% endif %}">
+	<div class="artistName"><a href="/artist/{{ linkFName }}-{{ linkLName }}_2023.html">{{ artist.FirstName}} {{artist.LastName }}</a></div>
+	<div class="photo">
+		<a href="/artist/{{ linkFName }}-{{ linkLName }}_2023.html"
+		><img src="/assets/thumbnails/{{ linkLName }}{{ linkFName }}.jpg" alt="&copy; {{ artist.FirstName}} {{artist.LastName }}"></a>
+	</div>
+	<div class="media">{{ artist.Media1 }}{% if artist.Media2 %}, {{ artist.Media2 }} {% endif %}</div>
+	{% if artist.OpenDays == "Saturday and Sunday Only" %}
+		<small>{{ artist.OpenDays }}</small>
+	{% endif %}
+	<div class="stopNo">Stop #{{StopNo}}</div>
+</li>
+
+{% endfor %}
+</ul>
+</div>
+</div>
+
+
+			</div>
+			</article>
+		</div>
+		<footer class="row">
+			<section class="full lower">
+				<div class="main-menu foot"><!-- intentionally blank --></div>
+				<div class="my-3">{% include copyright.html %}</div>
+			</section>
+		</footer>
+		<aside class="">
+<!-- [tracking and other global scripts] -->
+
+{% if jekyll.environment == "production" %}
+  {% include tracking.html %}
+{% endif %}
+<!--  include other-global-scripts.html  -->
+		</aside>
+	</div>
+</div>
+</body>
+</html>
